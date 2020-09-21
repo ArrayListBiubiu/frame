@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- ============================== spring属性注入的方式：（一）set方法 -->
+    <bean id="cat01" class="属性注入.Cat01">
+        <property name="name" value="汤姆猫"/>
+        <property name="age" value="5"/>
+    </bean>
+
+    <!-- ============================== spring属性注入的方式：（二）构造方法 -->
+    <bean id="cat02" class="属性注入.Cat02">
+        <!-- name指得是参数名 -->
+        <constructor-arg name="name" value="波斯猫"/>
+        <constructor-arg name="age" value="3"/>
+    </bean>
+
+    <!-- ============================== spring属性注入的方式：（三）构造方法 -->
+    <context:component-scan base-package="属性注入"/>
+
+</beans>

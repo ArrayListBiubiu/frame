@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- ============================== spring创建对象的四种方式：（一）构造方法 -->
+    <!-- 1.1.无参构造 -->
+    <bean id="dog" class="创建对象.Dog01">
+    </bean>
+
+    <!-- 1.2.有参构造 -->
+    <!-- 1.2.1.根据参数的下标来设置 -->
+    <bean id="dog2" class="创建对象.Dog01">
+        <!-- index指的是构造方法参数的下标 ，从0开始-->
+        <constructor-arg index="0" value="哈士奇"/>
+        <constructor-arg index="1" value="5"/>
+    </bean>
+
+    <!-- 1.2.2.根据参数的名称来设置 -->
+    <bean id="dog3" class="创建对象.Dog01">
+        <!-- name指得是参数名 -->
+        <constructor-arg name="name" value="萨摩耶"/>
+        <constructor-arg name="age" value="3"/>
+    </bean>
+
+    <!-- 1.2.3.根据参数的类型设置 -->
+    <bean id="dog4" class="创建对象.Dog01">
+        <constructor-arg type="java.lang.String" value="牧羊犬"/>
+        <constructor-arg type="java.lang.Integer" value="2"/>
+    </bean>
+
+
+    <!-- ============================== spring创建对象的四种方式：（二）实例工厂
+                                                                            注：实例工厂方法：需要另一个类中存在工厂方法，可以创建它的对象  -->
+    <bean id="dog02Factory" class="创建对象.Dog02Factory">
+    </bean>
+    <bean id="dog02" class="创建对象.Dog02" factory-method="getDog02" factory-bean="dog02Factory">
+    </bean>
+
+
+    <!-- ============================== spring创建对象的四种方式：（三）静态工厂 -->
+    <bean id="cat" class="创建对象.Dog03" factory-method="getDog03">
+    </bean>
+
+    <!-- ============================== spring创建对象的四种方式：（四）注解扫描
+                                                                            注：组建扫描，base-package是根包 -->
+    <context:component-scan base-package="创建对象"/>
+
+</beans>
