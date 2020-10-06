@@ -2,7 +2,7 @@ package 属性注入;
 
 
 /**
- * 属性注入的方式：（1）set方法
+ * 属性注入的方式：（一）set方法
  */
 public class Cat01 {
 

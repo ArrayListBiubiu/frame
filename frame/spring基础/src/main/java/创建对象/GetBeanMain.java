@@ -8,8 +8,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * ***只要加载spring配置文件，spring自动new出相应对象。***
  * 从这个类中可以看到，只是加载了"创建对象.xml"配置文件，但是其对应的构造方法已经全部启动，即对象已经创建完毕，
  * 而后续的 getBean() 方法，只是将创建好的对象从容器中拿出来使用而已，一定要明确 bean 的生命周期。
- *
- *
  */
 public class GetBeanMain {
 
