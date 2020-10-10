@@ -1,11 +1,11 @@
-package ÊôĞÔ×¢Èë;
+package å±æ€§æ³¨å…¥;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * ÊôĞÔ×¢ÈëµÄ·½Ê½£º£¨Èı£©»ùÓÚ×¢½â
+ * å±æ€§æ³¨å…¥çš„æ–¹å¼ï¼šï¼ˆä¸‰ï¼‰åŸºäºæ³¨è§£
  */
 @Component
 public class Cat03 {

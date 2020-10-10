@@ -1,4 +1,4 @@
-package ×¢½â05_Bean;
+package æ³¨è§£05_Bean;
 
 
 import org.springframework.context.annotation.Bean;
@@ -7,9 +7,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyConfig {
 
-    // ´´½¨Ò»¸öµ¥ÊµÀıbean
-    // £¨1£©ÀûÓÃ initMethod = "init" Ö¸¶¨³õÊ¼»¯bean·½·¨
-    // £¨2£©ÀûÓÃ destroyMethod = "destroy" Ö¸¶¨Ïú»Ùbean·½·¨
+    // åˆ›å»ºä¸€ä¸ªå•å®ä¾‹bean
+    // ï¼ˆ1ï¼‰åˆ©ç”¨ initMethod = "init" æŒ‡å®šåˆå§‹åŒ–beanæ–¹æ³•
+    // ï¼ˆ2ï¼‰åˆ©ç”¨ destroyMethod = "destroy" æŒ‡å®šé”€æ¯beanæ–¹æ³•
     @Bean(initMethod = "init", destroyMethod = "destroy")
     public Student getStudent() {
         return new Student();

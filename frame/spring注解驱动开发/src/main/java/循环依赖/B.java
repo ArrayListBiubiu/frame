@@ -1,19 +1,19 @@
-package 循环依赖;
+package 寰幆渚濊禆;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class B {
+    @Autowired
     private A a;
 
     public B() {
-        System.out.println("【class B：无参构造】");
     }
 
     public A getA() {
-        System.out.println("【class B：getA】");
         return a;
     }
 
     public void setA(A a) {
-        System.out.println("【class B：setA】");
         this.a = a;
     }
 }

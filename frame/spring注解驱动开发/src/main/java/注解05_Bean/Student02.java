@@ -1,20 +1,20 @@
-package ×¢½â05_Bean;
+package æ³¨è§£05_Bean;
 
 
 /**
- * ÓÃÓÚ´´½¨¶àÊµÀıbean
+ * ç”¨äºåˆ›å»ºå¤šå®ä¾‹bean
  */
 public class Student02 {
 
     public Student02() {
-        System.out.println("¡¾Student02¡¿ ÎŞ²Î¹¹Ôì·½·¨Æô¶¯");
+        System.out.println("ã€Student02ã€‘ æ— å‚æ„é€ æ–¹æ³•å¯åŠ¨");
     }
 
     public void init() {
-        System.out.println("¡¾Student02¡¿ init()·½·¨Æô¶¯");
+        System.out.println("ã€Student02ã€‘ init()æ–¹æ³•å¯åŠ¨");
     }
 
     public void destroy() {
-        System.out.println("¡¾Student02¡¿ destroy()·½·¨Æô¶¯");
+        System.out.println("ã€Student02ã€‘ destroy()æ–¹æ³•å¯åŠ¨");
     }
 }

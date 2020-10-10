@@ -1,5 +1,4 @@
-package Ñ­»·ÒÀÀµ;
-
+package å¾ªç¯ä¾èµ–;
 
 import org.springframework.stereotype.Component;
 

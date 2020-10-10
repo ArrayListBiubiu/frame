@@ -1,11 +1,11 @@
-package ×¢½â08_InitializingDisposable;
+package æ³¨è§£08_InitializingDisposable;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
 /**
- * bean µÄ³õÊ¼»¯ºÍÏú»ÙÂß¼­£º
- * ÀûÓÃ @InitializingBean ºÍ @DisposableBean ¶¨Òå bean µÄ³õÊ¼»¯ºÍÏú»ÙÂß¼­
+ * bean çš„åˆå§‹åŒ–å’Œé”€æ¯é€»è¾‘ï¼š
+ * åˆ©ç”¨ @InitializingBean å’Œ @DisposableBean å®šä¹‰ bean çš„åˆå§‹åŒ–å’Œé”€æ¯é€»è¾‘
  */
 public class InitializingDisposableMain {
 

@@ -1,25 +1,25 @@
-package ×¢½â02_ComponentScan;
+package å¨‰ã„¨Ð’02_ComponentScan;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ×¢½â02_ComponentScan.a.Person;
-import ×¢½â02_ComponentScan.b.MyConfig;
-import ×¢½â02_ComponentScan.b.Person02;
+import å¨‰ã„¨Ð’02_ComponentScan.a.Person;
+import å¨‰ã„¨Ð’02_ComponentScan.b.MyConfig;
+import å¨‰ã„¨Ð’02_ComponentScan.b.Person02;
 
 public class ComponentScanMain {
 
     public static void main(String[] args) {
 
-        // ***ÉùÃ÷ ac£¬ÒÔÏÂ¹²ÓÃÒ»¸ö±äÁ¿***
+        // ***æ¾¹ç‰ˆæ§‘ acé”›å±¼äº’æ¶“å¬ªå¡é¢ã„¤ç«´æ¶“î„å½‰é–²ï¿½***
         ApplicationContext ac = null;
 
-        // 1.ÀûÓÃ xml ·½Ê½ÊµÏÖ°üÉ¨Ãè -> package1
-        ac = new ClassPathXmlApplicationContext("×¢½â02_ComponentScan.xml");
+        // 1.é’â•ƒæ•¤ xml é‚ç‘°ç´¡ç€¹ç‚µå¹‡é–å‘®å£‚éŽ»ï¿½ -> package1
+        ac = new ClassPathXmlApplicationContext("å¨‰ã„¨Ð’02_ComponentScan.xml");
         Person person01 = (Person) ac.getBean("person");
         System.out.println(person01);
 
-        // 2.ÀûÓÃ @ComponentScan ·½Ê½ÊµÏÖ°üÉ¨Ãè -> package2
+        // 2.é’â•ƒæ•¤ @ComponentScan é‚ç‘°ç´¡ç€¹ç‚µå¹‡é–å‘®å£‚éŽ»ï¿½ -> package2
         ac = new AnnotationConfigApplicationContext(MyConfig.class);
         Person02 person02 = (Person02) ac.getBean("person02");
         System.out.println(person02);

@@ -1,10 +1,10 @@
-package ×¢½â07_BeanPostProcessor;
+package æ³¨è§£07_BeanPostProcessor;
 
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@ComponentScan("×¢½â07_BeanPostProcessor")
+@ComponentScan("æ³¨è§£07_BeanPostProcessor")
 @Configuration
 public class MyConfig {
 }

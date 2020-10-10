@@ -1,4 +1,4 @@
-package ×¢½â05_Bean;
+package æ³¨è§£05_Bean;
 
 
 import org.springframework.context.annotation.Bean;
@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class MyConfig02 {
 
-    // ´´½¨Ò»¸ö¶àÊµÀýbean
-    @Scope("prototype") // ¶àÊµÀý
+    // åˆ›å»ºä¸€ä¸ªå¤šå®žä¾‹bean
+    @Scope("prototype") // å¤šå®žä¾‹
     @Bean(initMethod = "init",destroyMethod = "destroy")
     public Student02 getStudent02(){
         return new Student02();

@@ -1,31 +1,31 @@
-package ÊôĞÔ×¢Èë;
+package å±æ€§æ³¨å…¥;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 /**
- * ÊôĞÔ×¢ÈëµÄ·½Ê½
- *      £¨1£©set·½·¨
- *      £¨2£©¹¹Ôì·½·¨
- *      £¨3£©»ùÓÚ×¢½â
+ * å±æ€§æ³¨å…¥çš„æ–¹å¼
+ *      ï¼ˆ1ï¼‰setæ–¹æ³•
+ *      ï¼ˆ2ï¼‰æ„é€ æ–¹æ³•
+ *      ï¼ˆ3ï¼‰åŸºäºæ³¨è§£
  */
 public class AttributeInjectionMain {
 
     public static void main(String[] args) {
 
-        // ¼ÓÔØspringÅäÖÃÎÄ¼ş£¬»ñÈ¡springÈİÆ÷¡£
-        ApplicationContext ac = new ClassPathXmlApplicationContext("ÊôĞÔ×¢Èë.xml");
+        // åŠ è½½springé…ç½®æ–‡ä»¶ï¼Œè·å–springå®¹å™¨ã€‚
+        ApplicationContext ac = new ClassPathXmlApplicationContext("å±æ€§æ³¨å…¥.xml");
 
-        // 1.set·½·¨
+        // 1.setæ–¹æ³•
         Cat01 cat01 = (Cat01) ac.getBean("cat01");
         System.out.println(cat01);
 
-        // 2.¹¹Ôì·½·¨
+        // 2.æ„é€ æ–¹æ³•
         Cat02 cat02 = (Cat02) ac.getBean("cat02");
         System.out.println(cat02);
 
-        // 3.»ùÓÚ×¢½â
+        // 3.åŸºäºæ³¨è§£
         Cat03 cat03 = (Cat03) ac.getBean("cat03");
         System.out.println(cat03);
 

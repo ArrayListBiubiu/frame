@@ -1,23 +1,23 @@
-package ´´½¨¶ÔÏó;
+package åˆ›å»ºå¯¹è±¡;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 /**
- * ***Ö»Òª¼ÓÔØspringÅäÖÃÎÄ¼þ£¬spring×Ô¶¯new³öÏàÓ¦¶ÔÏó¡£***
- * ´ÓÕâ¸öÀàÖÐ¿ÉÒÔ¿´µ½£¬Ö»ÊÇ¼ÓÔØÁË"´´½¨¶ÔÏó.xml"ÅäÖÃÎÄ¼þ£¬µ«ÊÇÆä¶ÔÓ¦µÄ¹¹Ôì·½·¨ÒÑ¾­È«²¿Æô¶¯£¬¼´¶ÔÏóÒÑ¾­´´½¨Íê±Ï£¬
- * ¶øºóÐøµÄ getBean() ·½·¨£¬Ö»ÊÇ½«´´½¨ºÃµÄ¶ÔÏó´ÓÈÝÆ÷ÖÐÄÃ³öÀ´Ê¹ÓÃ¶øÒÑ£¬Ò»¶¨ÒªÃ÷È· bean µÄÉúÃüÖÜÆÚ¡£
+ * ***åªè¦åŠ è½½springé…ç½®æ–‡ä»¶ï¼Œspringè‡ªåŠ¨newå‡ºç›¸åº”å¯¹è±¡ã€‚***
+ * ä»Žè¿™ä¸ªç±»ä¸­å¯ä»¥çœ‹åˆ°ï¼Œåªæ˜¯åŠ è½½äº†"åˆ›å»ºå¯¹è±¡.xml"é…ç½®æ–‡ä»¶ï¼Œä½†æ˜¯å…¶å¯¹åº”çš„æž„é€ æ–¹æ³•å·²ç»å…¨éƒ¨å¯åŠ¨ï¼Œå³å¯¹è±¡å·²ç»åˆ›å»ºå®Œæ¯•ï¼Œ
+ * è€ŒåŽç»­çš„ getBean() æ–¹æ³•ï¼Œåªæ˜¯å°†åˆ›å»ºå¥½çš„å¯¹è±¡ä»Žå®¹å™¨ä¸­æ‹¿å‡ºæ¥ä½¿ç”¨è€Œå·²ï¼Œä¸€å®šè¦æ˜Žç¡® bean çš„ç”Ÿå‘½å‘¨æœŸã€‚
  */
 public class GetBeanMain {
 
     public static void main(String[] args) {
         /**
-         * ¼ÓÔØspringÅäÖÃÎÄ¼þ£¬»ñÈ¡springÈÝÆ÷¡£
-         * ApplicationContextÊÇÒ»¸ö½Ó¿Ú£¬¶¨ÒåÁËspringÈÝÆ÷ÐèÒª¶¨ÒåµÄ·½·¨¡£
-         * ClassPathXmlApplicationContextÊµÏÖÁËApplicationContext½Ó¿ÚµÄÒ»¸öÀà£¬¸ÃÀà»áÒÀ¾ÝÀàÂ·¾¶È¥²éÕÒÅäÖÃÎÄ¼þ£¬È»ºóÆô¶¯springÈÝÆ÷¡£
+         * åŠ è½½springé…ç½®æ–‡ä»¶ï¼ŒèŽ·å–springå®¹å™¨ã€‚
+         * ApplicationContextæ˜¯ä¸€ä¸ªæŽ¥å£ï¼Œå®šä¹‰äº†springå®¹å™¨éœ€è¦å®šä¹‰çš„æ–¹æ³•ã€‚
+         * ClassPathXmlApplicationContextå®žçŽ°äº†ApplicationContextæŽ¥å£çš„ä¸€ä¸ªç±»ï¼Œè¯¥ç±»ä¼šä¾æ®ç±»è·¯å¾„åŽ»æŸ¥æ‰¾é…ç½®æ–‡ä»¶ï¼Œç„¶åŽå¯åŠ¨springå®¹å™¨ã€‚
          */
-        ApplicationContext ac = new ClassPathXmlApplicationContext("´´½¨¶ÔÏó.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("åˆ›å»ºå¯¹è±¡.xml");
     }
 
 }

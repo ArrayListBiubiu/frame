@@ -1,23 +1,23 @@
-package ÊôĞÔ×¢Èë;
+package å±æ€§æ³¨å…¥;
 
 
 /**
- * ÊôĞÔ×¢ÈëµÄ·½Ê½£º£¨Ò»£©set·½·¨
+ * å±æ€§æ³¨å…¥çš„æ–¹å¼ï¼šï¼ˆä¸€ï¼‰setæ–¹æ³•
  */
 public class Cat01 {
 
     private String name;
     private Integer age;
 
-    // ±ØĞë´æÔÚset·½·¨£¬¿ÉÒÔÃ»ÓĞget·½·¨
+    // å¿…é¡»å­˜åœ¨setæ–¹æ³•ï¼Œå¯ä»¥æ²¡æœ‰getæ–¹æ³•
     public void setName(String name) {
         this.name = name;
-        System.out.println("Cat01µÄsetName·½·¨Æô¶¯¡£¡£¡£");
+        System.out.println("Cat01çš„setNameæ–¹æ³•å¯åŠ¨ã€‚ã€‚ã€‚");
     }
 
     public void setAge(Integer age) {
         this.age = age;
-        System.out.println("Cat01µÄsetAge·½·¨Æô¶¯¡£¡£¡£");
+        System.out.println("Cat01çš„setAgeæ–¹æ³•å¯åŠ¨ã€‚ã€‚ã€‚");
     }
 
     @Override

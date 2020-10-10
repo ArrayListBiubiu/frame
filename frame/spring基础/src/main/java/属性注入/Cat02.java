@@ -1,8 +1,8 @@
-package ÊôĞÔ×¢Èë;
+package å±æ€§æ³¨å…¥;
 
 
 /**
- * ÊôĞÔ×¢ÈëµÄ·½Ê½£º£¨¶ş£©¹¹Ôì·½·¨
+ * å±æ€§æ³¨å…¥çš„æ–¹å¼ï¼šï¼ˆäºŒï¼‰æ„é€ æ–¹æ³•
  */
 public class Cat02 {
 
@@ -12,7 +12,7 @@ public class Cat02 {
     public Cat02(String name, Integer age) {
         this.name = name;
         this.age = age;
-        System.out.println("Cat02µÄÓĞ²Î¹¹Ôì·½·¨Æô¶¯¡£¡£¡£");
+        System.out.println("Cat02çš„æœ‰å‚æ„é€ æ–¹æ³•å¯åŠ¨ã€‚ã€‚ã€‚");
     }
 
     @Override

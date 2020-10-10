@@ -1,18 +1,18 @@
-package ´´½¨¶ÔÏó;
+package åˆ›å»ºå¯¹è±¡;
 
 /**
- * spring´´½¨¶ÔÏóµÄËÄÖÖ·½Ê½£º£¨Èı£©¾²Ì¬¹¤³§
+ * springåˆ›å»ºå¯¹è±¡çš„å››ç§æ–¹å¼ï¼šï¼ˆä¸‰ï¼‰é™æ€å·¥å‚
  */
 public class Dog03 {
 
     private String name;
     private Integer age;
 
-    // È·±£µ±Ç°¶ÔÏó²»ÊÇÍ¨¹ıÎŞ²Î¹¹Ôì·½·¨´´½¨µÄ¶ÔÏó
+    // ç¡®ä¿å½“å‰å¯¹è±¡ä¸æ˜¯é€šè¿‡æ— å‚æ„é€ æ–¹æ³•åˆ›å»ºçš„å¯¹è±¡
     public Dog03(String name, Integer age) {
         this.name = name;
         this.age = age;
-        System.out.println("Dog03µÄÓĞ²ÎÊı¹¹Ôì·½·¨Æô¶¯¡£¡£¡£");
+        System.out.println("Dog03çš„æœ‰å‚æ•°æ„é€ æ–¹æ³•å¯åŠ¨ã€‚ã€‚ã€‚");
     }
 
     public static Dog03 getDog03() {

@@ -1,15 +1,15 @@
-package ×¢½â06_PostConstructPreDestroy;
+package æ³¨è§£06_PostConstructPreDestroy;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
 /**
- * Ò²¿ÉÒÔÍ¨¹ı×¢½â@PostConstruct¡¢@PreDestroyÊµÏÖÉùÃ÷ÖÜÆÚµÄ¹ÜÀí£¬
- *     £¨1£©@PostConstructÊÇÔÚ¹¹Ôì·½·¨½áÊøÖ®ºó£¬¶Ôbean½øĞĞ³õÊ¼»¯£¬
- *     £¨2£©@PreDestroyÊÇÔÚbeanµÄÏú»ÙÖ®Ç°Ö´ĞĞ¡£
+ * ä¹Ÿå¯ä»¥é€šè¿‡æ³¨è§£@PostConstructã€@PreDestroyå®ç°å£°æ˜å‘¨æœŸçš„ç®¡ç†ï¼Œ
+ *     ï¼ˆ1ï¼‰@PostConstructæ˜¯åœ¨æ„é€ æ–¹æ³•ç»“æŸä¹‹åï¼Œå¯¹beanè¿›è¡Œåˆå§‹åŒ–ï¼Œ
+ *     ï¼ˆ2ï¼‰@PreDestroyæ˜¯åœ¨beançš„é”€æ¯ä¹‹å‰æ‰§è¡Œã€‚
  *
- * ÕâÀïÓĞÒ»µã£º
- *      £¨1£©¹¹Ôì·½·¨ÏÈÖ´ĞĞ£¬£¨2£©È»ºó@Autowire£¬£¨3£©È»ºó@PostConstruct
+ * è¿™é‡Œæœ‰ä¸€ç‚¹ï¼š
+ *      ï¼ˆ1ï¼‰æ„é€ æ–¹æ³•å…ˆæ‰§è¡Œï¼Œï¼ˆ2ï¼‰ç„¶å@Autowireï¼Œï¼ˆ3ï¼‰ç„¶å@PostConstruct
  */
 public class PostConstructPreDestroyMain {
 

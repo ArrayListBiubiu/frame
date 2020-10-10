@@ -1,41 +1,41 @@
-package ×¢½â03_Scope_Lazy;
+package æ³¨è§£03_Scope_Lazy;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * ÔÚ @Scope("singleton") ºÍ @Scope("prototype") Ä£Ê½ÏÂ£¬²»½öÇø±ğÌåÏÖÔÚµ¥ÀıºÍ¶àÀı
- * »¹ÓĞ¾ÍÊÇ£º
- *      ÔÚ singleton Ä£Ê½ÏÂ£¬¼ÓÔØ MyConfig.class ÅäÖÃÀà£¬»áÁ¢¿Ì´´½¨ bean ¶ÔÏóºó´æ´¢ÔÚspringµÄ»º´æÖĞ£¬ÏÂ´Îµ÷ÓÃ getBean() ·½·¨Ê±£¬Ö»Òª´Ó»º´æÖĞ»ñÈ¡¼´¿É£¬
- *          ËùÒÔÔÚÈÕÖ¾ÖĞÌåÏÖµÄÊÇ£¬
- *          µ±µ÷ÓÃ new AnnotationConfigApplicationContext(MyConfig.class) ·½·¨Ê±»áÁ¢¿Ì´¥·¢¹¹Ôì·½·¨£¬Êä³ö¶ÔÓ¦µÄÈÕÖ¾£¬
- *          Ö®ºóÔÙ´Îµ÷ÓÃ getBean() ·½·¨Ê±²»»áÓĞÈÎºÎÈÕÖ¾Êä³ö£»
+ * åœ¨ @Scope("singleton") å’Œ @Scope("prototype") æ¨¡å¼ä¸‹ï¼Œä¸ä»…åŒºåˆ«ä½“ç°åœ¨å•ä¾‹å’Œå¤šä¾‹
+ * è¿˜æœ‰å°±æ˜¯ï¼š
+ *      åœ¨ singleton æ¨¡å¼ä¸‹ï¼ŒåŠ è½½ MyConfig.class é…ç½®ç±»ï¼Œä¼šç«‹åˆ»åˆ›å»º bean å¯¹è±¡åå­˜å‚¨åœ¨springçš„ç¼“å­˜ä¸­ï¼Œä¸‹æ¬¡è°ƒç”¨ getBean() æ–¹æ³•æ—¶ï¼Œåªè¦ä»ç¼“å­˜ä¸­è·å–å³å¯ï¼Œ
+ *          æ‰€ä»¥åœ¨æ—¥å¿—ä¸­ä½“ç°çš„æ˜¯ï¼Œ
+ *          å½“è°ƒç”¨ new AnnotationConfigApplicationContext(MyConfig.class) æ–¹æ³•æ—¶ä¼šç«‹åˆ»è§¦å‘æ„é€ æ–¹æ³•ï¼Œè¾“å‡ºå¯¹åº”çš„æ—¥å¿—ï¼Œ
+ *          ä¹‹åå†æ¬¡è°ƒç”¨ getBean() æ–¹æ³•æ—¶ä¸ä¼šæœ‰ä»»ä½•æ—¥å¿—è¾“å‡ºï¼›
  *
- *      ÔÚ prototype Ä£Ê½ÏÂ£¬¼ÓÔØ MyConfig.class ÅäÖÃÀà£¬²»»áÁ¢¿Ì´´½¨ bean ¶ÔÏó£¬ĞèÒªµÈ´ıÏÂ´Îµ÷ÓÃ getBean() ·½·¨Ê±£¬²Å»á´´½¨Ò»¸öĞÂµÄ bean ¶ÔÏó£¬
- *          ËùÒÔÔÚÈÕÖ¾ÖĞÌåÏÖµÄÊÇ£¬
- *          µ±µ÷ÓÃ new AnnotationConfigApplicationContext(MyConfig.class) ·½·¨Ê±£¬²»»áÓĞÈÎºÎµÄÈÕÖ¾Êä³ö£¬
- *          Ö®ºóµ÷ÓÃ getBean() ·½·¨Ê±²Å»á´¥·¢ Bean ÊµÌåÀàµÄ¹¹Ôì·½·¨£¬´´½¨Ò»¸öĞÂµÄ¶ÔÏó£¬
- *          µ±È»Ã¿Ò»´Îµ÷ÓÃ getBean() ·½·¨Ê±¶¼»á´¥·¢ Bean ÊµÌåÀàµÄ¹¹Ôì·½·¨£»
- * Ğ¡bug¼ÇÂ¼£º
- *      ÎÒÔÚµ±Ç° demo ÖĞ£¬ÎªÁËÑéÖ¤ prototype Ä£Ê½µÄ"¶àÀıÀÁ¼ÓÔØ"£¬¾Í°Ñ "ac.getBean("getBee")" ·½·¨×¢ÊÍµôÁË£¬
- *      µ«ÊÇ·¢ÏÖÖ´ĞĞ "new AnnotationConfigApplicationContext(MyConfig.class)"·½·¨Ê±ÈÔÈ»»á´¥·¢¹¹Ôì·½·¨£¬´´½¨Ò»¸ö¶ÔÏó£¬
- *      Ô­ÒòÊÇÒòÎª£¬ÎÒ»¹ĞèÒª×¢ÊÍµô "MyConfig" ÅäÖÃÀàÖĞ¹ØÓÚ singleton µÄ @Bean¡£
+ *      åœ¨ prototype æ¨¡å¼ä¸‹ï¼ŒåŠ è½½ MyConfig.class é…ç½®ç±»ï¼Œä¸ä¼šç«‹åˆ»åˆ›å»º bean å¯¹è±¡ï¼Œéœ€è¦ç­‰å¾…ä¸‹æ¬¡è°ƒç”¨ getBean() æ–¹æ³•æ—¶ï¼Œæ‰ä¼šåˆ›å»ºä¸€ä¸ªæ–°çš„ bean å¯¹è±¡ï¼Œ
+ *          æ‰€ä»¥åœ¨æ—¥å¿—ä¸­ä½“ç°çš„æ˜¯ï¼Œ
+ *          å½“è°ƒç”¨ new AnnotationConfigApplicationContext(MyConfig.class) æ–¹æ³•æ—¶ï¼Œä¸ä¼šæœ‰ä»»ä½•çš„æ—¥å¿—è¾“å‡ºï¼Œ
+ *          ä¹‹åè°ƒç”¨ getBean() æ–¹æ³•æ—¶æ‰ä¼šè§¦å‘ Bean å®ä½“ç±»çš„æ„é€ æ–¹æ³•ï¼Œåˆ›å»ºä¸€ä¸ªæ–°çš„å¯¹è±¡ï¼Œ
+ *          å½“ç„¶æ¯ä¸€æ¬¡è°ƒç”¨ getBean() æ–¹æ³•æ—¶éƒ½ä¼šè§¦å‘ Bean å®ä½“ç±»çš„æ„é€ æ–¹æ³•ï¼›
+ * å°bugè®°å½•ï¼š
+ *      æˆ‘åœ¨å½“å‰ demo ä¸­ï¼Œä¸ºäº†éªŒè¯ prototype æ¨¡å¼çš„"å¤šä¾‹æ‡’åŠ è½½"ï¼Œå°±æŠŠ "ac.getBean("getBee")" æ–¹æ³•æ³¨é‡Šæ‰äº†ï¼Œ
+ *      ä½†æ˜¯å‘ç°æ‰§è¡Œ "new AnnotationConfigApplicationContext(MyConfig.class)"æ–¹æ³•æ—¶ä»ç„¶ä¼šè§¦å‘æ„é€ æ–¹æ³•ï¼Œåˆ›å»ºä¸€ä¸ªå¯¹è±¡ï¼Œ
+ *      åŸå› æ˜¯å› ä¸ºï¼Œæˆ‘è¿˜éœ€è¦æ³¨é‡Šæ‰ "MyConfig" é…ç½®ç±»ä¸­å…³äº singleton çš„ @Beanã€‚
  */
 public class ScopeLazyMain {
 
     public static void main(String[] args) {
-        // ÉùÃ÷ ApplicationContext ¶ÔÏó
+        // å£°æ˜ ApplicationContext å¯¹è±¡
         ApplicationContext ac = null;
 
         ac = new AnnotationConfigApplicationContext(MyConfig.class);
         Bee bee = (Bee) ac.getBean("getBee");
         Bee bee2 = (Bee) ac.getBean("getBee");
-        // ÔÚ @Scope("singleton") ÏÂ£¨¼´ÔÚÄ¬ÈÏÇé¿öÏÂ£©£¬ÊÇµ¥ÀûµÄ  bee == bee2
+        // åœ¨ @Scope("singleton") ä¸‹ï¼ˆå³åœ¨é»˜è®¤æƒ…å†µä¸‹ï¼‰ï¼Œæ˜¯å•åˆ©çš„  bee == bee2
         System.out.println(bee == bee2);
 
         Bee bee3 = (Bee) ac.getBean("getBee2");
         Bee bee4 = (Bee) ac.getBean("getBee2");
-        // ÔÚ @Scope("prototype") ÏÂ£¨¼´ÔÚÄ¬ÈÏÇé¿öÏÂ£©£¬ÊÇ¶àÀûµÄ  bee3 != bee4
+        // åœ¨ @Scope("prototype") ä¸‹ï¼ˆå³åœ¨é»˜è®¤æƒ…å†µä¸‹ï¼‰ï¼Œæ˜¯å¤šåˆ©çš„  bee3 != bee4
         System.out.println(bee3 == bee4);
 
 

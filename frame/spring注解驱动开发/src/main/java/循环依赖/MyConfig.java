@@ -1,12 +1,12 @@
-package Ñ­»·ÒÀÀµ;
+package å¾ªç¯ä¾èµ–;
 
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 
-@ComponentScan(value = "Ñ­»·ÒÀÀµ")
+
+@ComponentScan(value = "å¾ªç¯ä¾èµ–")
 @Configuration
 public class MyConfig {
-
 }

@@ -1,10 +1,10 @@
-package 注解02_ComponentScan.b;
+package 濞夈劏袙02_ComponentScan.b;
 
 
 import org.springframework.stereotype.Controller;
 
 /**
- * 服务于利用@ComponentScan方式实现包扫描
+ * 閺堝秴濮熸禍搴″焺閻⑺奀omponentScan閺傜懓绱＄�圭偟骞囬崠鍛閹伙拷
  */
 @Controller
 public class Person02 {

@@ -1,48 +1,48 @@
-package ×¢½â05_Bean;
+package æ³¨è§£05_Bean;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
 /**
- * beanµÄÉúÃüÖÜÆÚ£º
- *      µ¥ÊµÀı£º
- *           --- ´´½¨IOCÈİÆ÷£»
- *          £¨1£©¹¹Ôì·½·¨£»
- *          £¨2£©³õÊ¼»¯£¬init()£»
- *           --- ¿ª·¢ÈËÔ±Ê¹ÓÃbean¶ÔÏó£¬Íê³É¶ÔÓ¦¹¤×÷£»
- *          £¨3£©Ïú»Ù£¬destroy()£¬ µ±µ÷ÓÃac.clos()·½·¨Ê±spring»áÏú»Ùbean£»
- *      ¶àÊµÀı£º
- *           --- ´´½¨IOCÈİÆ÷£»
- *           --- µ÷ÓÃgetBean()»ñÈ¡¶ÔÏó£»
- *           £¨1£©¹¹Ôì·½·¨£»
- *           £¨2£©³õÊ¼»¯£¬init()£»
- *           --- ¿ª·¢ÈËÔ±Ê¹ÓÃbean¶ÔÏó£¬Íê³É¶ÔÓ¦¹¤×÷£»
- *           *** ¶àÊµÀıÊ±£¬¼´±ãµ÷ÓÃac.clos()·½·¨£¬spring²»×öÏú»Ù´¦Àí£¬Ò²¿ÉÒÔËµspringÖ»¸ºÔğ°ïÃ¦´´½¨¶ÔÏó£¬ÆäËûµÄ¶ÔÓÚbeanµÄ¹ÜÀí²»ÔÙ²ÎÓëÁË
+ * beançš„ç”Ÿå‘½å‘¨æœŸï¼š
+ *      å•å®ä¾‹ï¼š
+ *           --- åˆ›å»ºIOCå®¹å™¨ï¼›
+ *          ï¼ˆ1ï¼‰æ„é€ æ–¹æ³•ï¼›
+ *          ï¼ˆ2ï¼‰åˆå§‹åŒ–ï¼Œinit()ï¼›
+ *           --- å¼€å‘äººå‘˜ä½¿ç”¨beanå¯¹è±¡ï¼Œå®Œæˆå¯¹åº”å·¥ä½œï¼›
+ *          ï¼ˆ3ï¼‰é”€æ¯ï¼Œdestroy()ï¼Œ å½“è°ƒç”¨ac.clos()æ–¹æ³•æ—¶springä¼šé”€æ¯beanï¼›
+ *      å¤šå®ä¾‹ï¼š
+ *           --- åˆ›å»ºIOCå®¹å™¨ï¼›
+ *           --- è°ƒç”¨getBean()è·å–å¯¹è±¡ï¼›
+ *           ï¼ˆ1ï¼‰æ„é€ æ–¹æ³•ï¼›
+ *           ï¼ˆ2ï¼‰åˆå§‹åŒ–ï¼Œinit()ï¼›
+ *           --- å¼€å‘äººå‘˜ä½¿ç”¨beanå¯¹è±¡ï¼Œå®Œæˆå¯¹åº”å·¥ä½œï¼›
+ *           *** å¤šå®ä¾‹æ—¶ï¼Œå³ä¾¿è°ƒç”¨ac.clos()æ–¹æ³•ï¼Œspringä¸åšé”€æ¯å¤„ç†ï¼Œä¹Ÿå¯ä»¥è¯´springåªè´Ÿè´£å¸®å¿™åˆ›å»ºå¯¹è±¡ï¼Œå…¶ä»–çš„å¯¹äºbeançš„ç®¡ç†ä¸å†å‚ä¸äº†
  */
 public class BeanMain {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ac = null;
 
-        // 1.µ¥ÊµÀı
-        // 1.1.´´½¨IOCÈİÆ÷
+        // 1.å•å®ä¾‹
+        // 1.1.åˆ›å»ºIOCå®¹å™¨
         ac = new AnnotationConfigApplicationContext(MyConfig.class);
-        // 1.2.»ñÈ¡¶ÔÏó
+        // 1.2.è·å–å¯¹è±¡
         Student student = (Student) ac.getBean("getStudent");
         Student student2 = (Student) ac.getBean("getStudent");
         System.out.println(student == student2);
-        // 1.3.¹Ø±ÕÈİÆ÷
+        // 1.3.å…³é—­å®¹å™¨
         ac.close();
 
 
-        // 2.¶àÊµÀı
-        // 2.1.´´½¨IOCÈİÆ÷
+        // 2.å¤šå®ä¾‹
+        // 2.1.åˆ›å»ºIOCå®¹å™¨
         ac = new AnnotationConfigApplicationContext(MyConfig02.class);
-        // 2.2.»ñÈ¡¶ÔÏó
+        // 2.2.è·å–å¯¹è±¡
         Student02 student02 = (Student02) ac.getBean("getStudent02");
         Student02 student03 = (Student02) ac.getBean("getStudent02");
         System.out.println(student02 == student03);
-        // 2.3.¹Ø±ÕIOCÈİÆ÷
+        // 2.3.å…³é—­IOCå®¹å™¨
         ac.close();
     }
 }

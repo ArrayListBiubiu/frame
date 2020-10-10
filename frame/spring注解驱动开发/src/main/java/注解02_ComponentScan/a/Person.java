@@ -1,10 +1,10 @@
-package ×¢½â02_ComponentScan.a;
+package å¨‰ã„¨Ğ’02_ComponentScan.a;
 
 
 import org.springframework.stereotype.Controller;
 
 /**
- * ·şÎñÓÚÀûÓÃxml´«Í³·½Ê½ÊµÏÖ°üÉ¨Ãè
+ * éˆå¶…å§Ÿæµœåº¡åŸ„é¢â–mlæµ¼çŠµç²ºé‚ç‘°ç´¡ç€¹ç‚µå¹‡é–å‘®å£‚é»ï¿½
  */
 @Controller
 public class Person {
@@ -17,7 +17,7 @@ public class Person {
     }
 
     // ???
-    // @Controller Ò»¶¨ÒªÓĞÎŞ²Î¹¹Ôì£¬Ô­ÒòÔİÊ±²»Ã÷È·
+    // @Controller æ¶“ï¿½ç€¹æ°³î›¦éˆå¤‹æ£¤é™å‚›ç€¯é–«ç‹…ç´é˜ç†·æ´œé†å‚›æ¤‚æ¶“å¶†æ§‘çº­ï¿½
     public Person(String name, int age) {
         this.name = name;
         this.age = age;

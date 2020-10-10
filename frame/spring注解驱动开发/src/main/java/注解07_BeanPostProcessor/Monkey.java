@@ -1,4 +1,4 @@
-package ×¢½â07_BeanPostProcessor;
+package æ³¨è§£07_BeanPostProcessor;
 
 import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
@@ -11,12 +11,12 @@ public class Monkey {
 
     @PostConstruct
     public void init() {
-        System.out.println("¡¾Monkey¡¿ init()·½·¨Æô¶¯");
+        System.out.println("ã€Monkeyã€‘ init()æ–¹æ³•å¯åŠ¨");
     }
 
     @PreDestroy
     public void destroy() {
-        System.out.println("¡¾Monkey¡¿ destroy()·½·¨Æô¶¯");
+        System.out.println("ã€Monkeyã€‘ destroy()æ–¹æ³•å¯åŠ¨");
     }
 
 

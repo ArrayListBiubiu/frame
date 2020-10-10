@@ -1,8 +1,8 @@
-package ×¢½â04_Import;
+package æ³¨è§£04_Import;
 
 public class Pig03 {
 
     public Pig03() {
-        System.out.println("¡¾Pig03¡¿ ÎŞ²Î¹¹Ôì·½·¨Æô¶¯");
+        System.out.println("ã€Pig03ã€‘ æ— å‚æ„é€ æ–¹æ³•å¯åŠ¨");
     }
 }

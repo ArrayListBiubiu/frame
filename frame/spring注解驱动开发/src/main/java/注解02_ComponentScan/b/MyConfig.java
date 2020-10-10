@@ -1,11 +1,11 @@
-package ×¢½â02_ComponentScan.b;
+package å¨‰ã„¨Ğ’02_ComponentScan.b;
 
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(value = "×¢½â02_ComponentScan.b") // °üÉ¨Ãè
+@ComponentScan(value = "å¨‰ã„¨Ğ’02_ComponentScan.b") // é–å‘®å£‚é»ï¿½
 public class MyConfig {
 
 

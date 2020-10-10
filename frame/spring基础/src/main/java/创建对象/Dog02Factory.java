@@ -1,13 +1,13 @@
-package ´´½¨¶ÔÏó;
+package åˆ›å»ºå¯¹è±¡;
 
 /**
- * ·şÎñÓÚ Dog02 µÄÊµÀı¹¤³§·½·¨
+ * æœåŠ¡äº Dog02 çš„å®ä¾‹å·¥å‚æ–¹æ³•
  */
 public class Dog02Factory {
 
-    // ÊµÀı¹¤³§·½·¨
+    // å®ä¾‹å·¥å‚æ–¹æ³•
     public Dog02 getDog02() {
-        System.out.println("Dog02µÄÊµÀı¹¤³§·½·¨Æô¶¯¡£¡£¡£");
+        System.out.println("Dog02çš„å®ä¾‹å·¥å‚æ–¹æ³•å¯åŠ¨ã€‚ã€‚ã€‚");
         return new Dog02("Dog02", 3);
     }
 

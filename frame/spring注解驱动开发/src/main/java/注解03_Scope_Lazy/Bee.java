@@ -1,8 +1,8 @@
-package ×¢½â03_Scope_Lazy;
+package æ³¨è§£03_Scope_Lazy;
 
 
 /**
- * ·şÎñÓÚ @Scope µÄÊµÌåÀà
+ * æœåŠ¡äº @Scope çš„å®ä½“ç±»
  */
 public class Bee {
 

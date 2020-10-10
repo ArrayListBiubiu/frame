@@ -1,4 +1,4 @@
-package ×¢½â01_Bean;
+package æ³¨è§£01_Bean;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -6,23 +6,23 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 /**
- * 1.»ùÓÚ´«Í³·½Ê½»ñÈ¡ bean ¶ÔÏó£¬Ò²¿ÉÒÔËµÊÇÏòspringÈÝÆ÷ÖÐ×¢²á bean ¶ÔÏó
- * 2.ÀûÓÃ @Bean ×¢½â£¬Íê³ÉÉÏÊö¹¦ÄÜ
+ * 1.åŸºäºŽä¼ ç»Ÿæ–¹å¼èŽ·å– bean å¯¹è±¡ï¼Œä¹Ÿå¯ä»¥è¯´æ˜¯å‘springå®¹å™¨ä¸­æ³¨å†Œ bean å¯¹è±¡
+ * 2.åˆ©ç”¨ @Bean æ³¨è§£ï¼Œå®Œæˆä¸Šè¿°åŠŸèƒ½
  */
 public class BeanConfigurationMain {
 
     public static void main(String[] args) {
-        // ***ÉùÃ÷ ac£¬ÒÔÏÂ¹²ÓÃÒ»¸ö±äÁ¿***
+        // ***å£°æ˜Ž acï¼Œä»¥ä¸‹å…±ç”¨ä¸€ä¸ªå˜é‡***
         ApplicationContext ac = null;
 
-        // 1.»ùÓÚ´«Í³·½Ê½»ñÈ¡ bean ¶ÔÏó
-        ac = new ClassPathXmlApplicationContext("×¢½â01_Bean.xml");
+        // 1.åŸºäºŽä¼ ç»Ÿæ–¹å¼èŽ·å– bean å¯¹è±¡
+        ac = new ClassPathXmlApplicationContext("æ³¨è§£01_Bean.xml");
         Bird bird01 = (Bird) ac.getBean("bird01");
         System.out.println(bird01);
 
-        // 2.ÀûÓÃ @Bean »ñÈ¡ bean ¶ÔÏó
-        // £¨1£©ac.getBean()·½·¨»ñÈ¡µ½µÄÀàÐÍÊÇ£¬@BeanÐÞÊÎµÄ·½·¨µÄ·µ»ØÖµµÄÀàÐÍ£¬
-        // £¨2£©idÄ¬ÈÏÊ¹ÓÃ·½·¨Ãû×÷Îªid£»   Ò²¿ÉÒÔÊ¹ÓÃÏÔÏÖµÄÉùÃ÷id -> @Bean("birddddd")£»
+        // 2.åˆ©ç”¨ @Bean èŽ·å– bean å¯¹è±¡
+        // ï¼ˆ1ï¼‰ac.getBean()æ–¹æ³•èŽ·å–åˆ°çš„ç±»åž‹æ˜¯ï¼Œ@Beanä¿®é¥°çš„æ–¹æ³•çš„è¿”å›žå€¼çš„ç±»åž‹ï¼Œ
+        // ï¼ˆ2ï¼‰idé»˜è®¤ä½¿ç”¨æ–¹æ³•åä½œä¸ºidï¼›   ä¹Ÿå¯ä»¥ä½¿ç”¨æ˜¾çŽ°çš„å£°æ˜Žid -> @Bean("birddddd")ï¼›
         ac = new AnnotationConfigApplicationContext(MyConfig.class);
         Bird02 bird02 = (Bird02) ac.getBean("getBird02");
         System.out.println(bird02);

@@ -1,21 +1,21 @@
-package ×¢½â05_Bean;
+package æ³¨è§£05_Bean;
 
 
 /**
- * ÓÃÓÚ´´½¨µ¥ÊµÀıbean
+ * ç”¨äºåˆ›å»ºå•å®ä¾‹bean
  */
 public class Student {
 
     public Student() {
-        System.out.println("¡¾Student¡¿ ÎŞ²Î¹¹Ôì·½·¨Æô¶¯");
+        System.out.println("ã€Studentã€‘ æ— å‚æ„é€ æ–¹æ³•å¯åŠ¨");
     }
 
     public void init() {
-        System.out.println("¡¾Student¡¿ init()·½·¨Æô¶¯");
+        System.out.println("ã€Studentã€‘ init()æ–¹æ³•å¯åŠ¨");
     }
 
     public void destroy() {
-        System.out.println("¡¾Student¡¿ destroy()·½·¨Æô¶¯");
+        System.out.println("ã€Studentã€‘ destroy()æ–¹æ³•å¯åŠ¨");
     }
 
 }

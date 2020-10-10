@@ -1,4 +1,4 @@
-package ×¢½â08_InitializingDisposable;
+package æ³¨è§£08_InitializingDisposable;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
@@ -8,19 +8,19 @@ import org.springframework.stereotype.Component;
 public class Car implements InitializingBean, DisposableBean {
 
     public Car() {
-        System.out.println("¡¾Car¡¿ ÎŞ²Î¹¹Ôì·½·¨Æô¶¯");
+        System.out.println("ã€Carã€‘ æ— å‚æ„é€ æ–¹æ³•å¯åŠ¨");
     }
 
-    // bean ÊµÀı»¯ºÍ³õÊ¼»¯Íê³ÉÖ®ºóµ÷ÓÃ
+    // bean å®ä¾‹åŒ–å’Œåˆå§‹åŒ–å®Œæˆä¹‹åè°ƒç”¨
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("¡¾Car¡¿ afterPropertiesSet()·½·¨Æô¶¯");
+        System.out.println("ã€Carã€‘ afterPropertiesSet()æ–¹æ³•å¯åŠ¨");
     }
 
-    // bean Ïú»ÙÖ®Ç°µ÷ÓÃ
+    // bean é”€æ¯ä¹‹å‰è°ƒç”¨
     @Override
     public void destroy() throws Exception {
-        System.out.println("¡¾Car¡¿ destroy()·½·¨Æô¶¯");
+        System.out.println("ã€Carã€‘ destroy()æ–¹æ³•å¯åŠ¨");
     }
 
 

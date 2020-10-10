@@ -1,7 +1,7 @@
-package 注解01_Bean;
+package 娉ㄨВ01_Bean;
 
 /**
- * xml传统方式创建对象的实体类
+ * xml浼犵粺鏂瑰紡鍒涘缓瀵硅薄鐨勫疄浣撶被
  */
 public class Bird {
 

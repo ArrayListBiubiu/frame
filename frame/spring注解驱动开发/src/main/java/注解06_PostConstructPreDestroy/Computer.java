@@ -1,4 +1,4 @@
-package ×¢½â06_PostConstructPreDestroy;
+package æ³¨è§£06_PostConstructPreDestroy;
 
 import org.springframework.stereotype.Component;
 
@@ -10,16 +10,16 @@ import javax.annotation.PreDestroy;
 public class Computer {
 
     public Computer() {
-        System.out.println("¡¾Computer¡¿ ÎŞ²Î¹¹Ôì·½·¨Æô¶¯");
+        System.out.println("ã€Computerã€‘ æ— å‚æ„é€ æ–¹æ³•å¯åŠ¨");
     }
 
     @PostConstruct
     public void init(){
-        System.out.println("¡¾Computer¡¿ init()·½·¨Æô¶¯");
+        System.out.println("ã€Computerã€‘ init()æ–¹æ³•å¯åŠ¨");
     }
 
     @PreDestroy
     public void destroy(){
-        System.out.println("¡¾Computer¡¿ destroy()·½·¨Æô¶¯");
+        System.out.println("ã€Computerã€‘ destroy()æ–¹æ³•å¯åŠ¨");
     }
 }

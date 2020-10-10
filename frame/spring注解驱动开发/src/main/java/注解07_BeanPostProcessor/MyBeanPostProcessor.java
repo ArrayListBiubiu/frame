@@ -1,28 +1,28 @@
-package ×¢½â07_BeanPostProcessor;
+package æ³¨è§£07_BeanPostProcessor;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
 
 /**
- * ºóÖÃ´¦ÀíÆ÷£¬³õÊ¼»¯Ç°ºó½øĞĞµÄ¹¤×÷
+ * åç½®å¤„ç†å™¨ï¼Œåˆå§‹åŒ–å‰åè¿›è¡Œçš„å·¥ä½œ
  */
-@Component // ¼ÓÈëµ½ÈİÆ÷ÖĞ
+@Component // åŠ å…¥åˆ°å®¹å™¨ä¸­
 public class MyBeanPostProcessor implements BeanPostProcessor {
 
-    // beanÊµÀı³õÊ¼»¯Ö®Ç°±»µ÷ÓÃ
+    // beanå®ä¾‹åˆå§‹åŒ–ä¹‹å‰è¢«è°ƒç”¨
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("¡¾MyBeanPostProcessor¡¿ postProcessBeforeInitialization()·½·¨Æô¶¯");
+        System.out.println("ã€MyBeanPostProcessorã€‘ postProcessBeforeInitialization()æ–¹æ³•å¯åŠ¨");
         System.out.println("***" + bean);
         System.out.println("***" + beanName);
         return bean;
     }
 
-    // beanÊµÀı³õÊ¼»¯Ö®ºó±»µ÷ÓÃ
+    // beanå®ä¾‹åˆå§‹åŒ–ä¹‹åè¢«è°ƒç”¨
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("¡¾MyBeanPostProcessor¡¿ postProcessAfterInitialization()·½·¨Æô¶¯");
+        System.out.println("ã€MyBeanPostProcessorã€‘ postProcessAfterInitialization()æ–¹æ³•å¯åŠ¨");
         System.out.println("===" + bean);
         System.out.println("===" + beanName);
         return bean;

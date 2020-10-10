@@ -1,18 +1,18 @@
-package ×¢½â04_Import;
+package æ³¨è§£04_Import;
 
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
 
 
 /**
- * ×Ô¶¨ÒåÂß¼­ĞèÒªµ¼ÈëµÄ×é¼ş£¬±ØĞëÊµÏÖ ImportSelector ½Ó¿Ú
+ * è‡ªå®šä¹‰é€»è¾‘éœ€è¦å¯¼å…¥çš„ç»„ä»¶ï¼Œå¿…é¡»å®ç° ImportSelector æ¥å£
  */
 public class MyImportSelector implements ImportSelector {
 
-    // ²ÎÊı£º AnnotationMetadata ±íÊ¾£¬±ê×¢ÁË @Import µÄÀà£¨¼´£¬MyConfigÀà£©ËùÓĞµÄ×¢½âĞÅÏ¢
-    // ·µ»ØÖµ£º ĞèÒªµ¼Èë×é¼şµÄÈ«ÀàÃû
+    // å‚æ•°ï¼š AnnotationMetadata è¡¨ç¤ºï¼Œæ ‡æ³¨äº† @Import çš„ç±»ï¼ˆå³ï¼ŒMyConfigç±»ï¼‰æ‰€æœ‰çš„æ³¨è§£ä¿¡æ¯
+    // è¿”å›å€¼ï¼š éœ€è¦å¯¼å…¥ç»„ä»¶çš„å…¨ç±»å
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
-        return new String[]{"×¢½â04_Import.Pig03", "×¢½â04_Import.Pig04"};
+        return new String[]{"æ³¨è§£04_Import.Pig03", "æ³¨è§£04_Import.Pig04"};
     }
 }

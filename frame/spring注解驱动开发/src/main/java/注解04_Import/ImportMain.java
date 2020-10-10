@@ -1,12 +1,12 @@
-package ×¢½â04_Import;
+package æ³¨è§£04_Import;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * ´ÓÕâ¸ö main() ·½·¨Æô¶¯¿ÉÒÔ¿´³ö£¬
- *      £¨1£©Pig¡¢Pig02 ÊÇÍ¨¹ı Import(Pig.Class, Pig02.Class) µ¼Èë³É¹¦£»
- *      £¨2£©Pig03¡¢Pig04 ÊÇÍ¨¹ı MyImportSelector Ñ¡ÔñÆ÷µ¼Èë³É¹¦£»
+ * ä»è¿™ä¸ª main() æ–¹æ³•å¯åŠ¨å¯ä»¥çœ‹å‡ºï¼Œ
+ *      ï¼ˆ1ï¼‰Pigã€Pig02 æ˜¯é€šè¿‡ Import(Pig.Class, Pig02.Class) å¯¼å…¥æˆåŠŸï¼›
+ *      ï¼ˆ2ï¼‰Pig03ã€Pig04 æ˜¯é€šè¿‡ MyImportSelector é€‰æ‹©å™¨å¯¼å…¥æˆåŠŸï¼›
  */
 public class ImportMain {
 

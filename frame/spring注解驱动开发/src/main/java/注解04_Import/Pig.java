@@ -1,10 +1,10 @@
-package ×¢½â04_Import;
+package æ³¨è§£04_Import;
 
 
 public class Pig {
 
     public Pig() {
-        System.out.println("¡¾Pig¡¿ ÎŞ²Î¹¹Ôì·½·¨Æô¶¯");
+        System.out.println("ã€Pigã€‘ æ— å‚æ„é€ æ–¹æ³•å¯åŠ¨");
     }
 
 }

@@ -1,4 +1,4 @@
-package ×¢½â01_Bean;
+package æ³¨è§£01_Bean;
 
 
 import org.springframework.context.annotation.Bean;
@@ -9,7 +9,7 @@ public class MyConfig {
 
     @Bean
     public Bird02 getBird02(){
-        return new Bird02("ÀÏÓ¥", 3);
+        return new Bird02("è€é¹°", 3);
     }
 
 }

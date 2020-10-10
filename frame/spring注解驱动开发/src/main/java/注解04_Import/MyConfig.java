@@ -1,4 +1,4 @@
-package ×¢½â04_Import;
+package æ³¨è§£04_Import;
 
 
 import org.springframework.context.annotation.Configuration;
@@ -6,9 +6,9 @@ import org.springframework.context.annotation.Import;
 
 
 /**
- * Í¨¹ı @Import ÊµÏÖ Bean µÄ×¢Èë£¬ÕâÖÖ·½°¸Ò²ÊÇ»á¸ü¼Ó·½±ãÒ»Ğ©£¬²¢ÇÒÔÚ springboot ÖĞ±»¹ã·ºÓ¦ÓÃ
- *      £¨1£©¿ÉÒÔÖ±½Ó´«Èë Class£»
- *      £¨2£©Ò²¿ÉÒÔÍ¨¹ıÑ¡ÔñÆ÷£¬×Ô¶¨ÒåµÄ´«Èë Class£»
+ * é€šè¿‡ @Import å®ç° Bean çš„æ³¨å…¥ï¼Œè¿™ç§æ–¹æ¡ˆä¹Ÿæ˜¯ä¼šæ›´åŠ æ–¹ä¾¿ä¸€äº›ï¼Œå¹¶ä¸”åœ¨ springboot ä¸­è¢«å¹¿æ³›åº”ç”¨
+ *      ï¼ˆ1ï¼‰å¯ä»¥ç›´æ¥ä¼ å…¥ Classï¼›
+ *      ï¼ˆ2ï¼‰ä¹Ÿå¯ä»¥é€šè¿‡é€‰æ‹©å™¨ï¼Œè‡ªå®šä¹‰çš„ä¼ å…¥ Classï¼›
  */
 @Import({Pig.class, Pig02.class, MyImportSelector.class})
 @Configuration
