@@ -12,7 +12,6 @@
         <module>spring_ioc</module>
         <module>spring基础</module>
         <module>spring注解驱动开发</module>
-        <module>IOC</module>
     </modules>
 
 </project>
