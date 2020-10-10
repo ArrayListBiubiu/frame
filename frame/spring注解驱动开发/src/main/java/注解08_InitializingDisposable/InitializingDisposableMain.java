@@ -11,7 +11,7 @@ public class InitializingDisposableMain {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(MyConfig.class);
-        System.out.println(ac.getBean(Car.class));
+        ac.destroy();
 
     }
 

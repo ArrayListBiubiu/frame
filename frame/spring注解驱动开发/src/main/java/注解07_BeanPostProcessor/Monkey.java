@@ -1,12 +1,14 @@
 package 注解07_BeanPostProcessor;
 
 import org.springframework.stereotype.Component;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 @Component
 public class Monkey {
     public Monkey() {
+        System.out.println("【Monkey】 构造方法启动");
     }
 
     @PostConstruct

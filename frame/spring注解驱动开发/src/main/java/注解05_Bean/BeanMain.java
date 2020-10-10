@@ -5,13 +5,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * bean的生命周期：
- *      单实例：
+ *      单实例(Student):
  *           --- 创建IOC容器；
  *          （1）构造方法；
  *          （2）初始化，init()；
  *           --- 开发人员使用bean对象，完成对应工作；
  *          （3）销毁，destroy()， 当调用ac.clos()方法时spring会销毁bean；
- *      多实例：
+ *      多实例(Student02):
  *           --- 创建IOC容器；
  *           --- 调用getBean()获取对象；
  *           （1）构造方法；
