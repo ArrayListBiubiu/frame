@@ -12,7 +12,7 @@ public class XunhuanMain {
 
         AnnotationConfigApplicationContext ac2 = new AnnotationConfigApplicationContext(MyConfig.class);
         System.out.println("===========================");
-
+        //DefaultListableBeanFactory
 
     }
 }

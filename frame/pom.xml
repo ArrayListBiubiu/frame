@@ -12,6 +12,7 @@
         <module>spring_ioc</module>
         <module>spring基础</module>
         <module>spring注解驱动开发</module>
+        <module>spring连鹏举</module>
     </modules>
 
 </project>
