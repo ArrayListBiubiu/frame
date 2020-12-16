@@ -5,6 +5,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 /**
+ * 《自定义类MyProcessor实现了InstantiationAwareBeanPostProcessor接口之后，该bean对象的生命周期，以及cglib动态代理的调用过程》
+ *
  * 引入spring容器的有，（1）Dog，（2）MyProcessor，
  * 而MyInterceptor是用来做cglib动态代理时的拦截器，不需要交给spring管理
  *
@@ -27,8 +29,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *              进入if判断，获取一个cglib动态代理的bean对象，直接返回，不需要调用createBean()方法来创建对象，
  *      遍历MyProcessor：因为这个bean对象之前已经创建过了，所以可以直接从一级缓存中获取，直接返回了，不会再进入后续的逻辑判断。
  *
- * 总结：
- *      以上是所有自定义类MyProcessor实现了InstantiationAwareBeanPostProcessor接口之后，该bean对象的生命周期，以及cglib动态代理的调用过程
  * 引申问题：
  *      在重写before和after的时候，只重写after可以嘛？？？
  */
