@@ -30,9 +30,17 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *      遍历MyProcessor：因为这个bean对象之前已经创建过了，所以可以直接从一级缓存中获取，直接返回了，不会再进入后续的逻辑判断。
  *
  * 引申问题：
- *      在重写before和after的时候，只重写after可以嘛？？？
+ * 1、在重写before和after的时候，只重写after可以嘛？？？
+ *      bean = applyBeanPostProcessorsBeforeInstantiation(targetType, beanName);
+ *      if (bean != null) {
+ *          bean = applyBeanPostProcessorsAfterInitialization(bean, beanName);
+ *      }
+ *      不可以，因为如果不重写before就获取不到bean对象，那么就无法进入下边的if判断了，即便重写了after也毫无意义
+ * 2、在MyProcessor中不实用cglib动态代理来创建对象，只是单纯的new一个可以嘛？那么也会被spring管理吗？
+ *      可以，只不过无法得到方法的增强了，
+ *      而且，不影响被spring管理。
  */
-public class Main {
+public class Code01_Main {
     public static void main(String[] args) {
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("code01.xml");
