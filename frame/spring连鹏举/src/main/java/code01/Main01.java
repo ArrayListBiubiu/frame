@@ -40,10 +40,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *      可以，只不过无法得到方法的增强了，
  *      而且，不影响被spring管理。
  */
-public class Code01_Main {
+public class Main01 {
     public static void main(String[] args) {
 
-        ApplicationContext ac = new ClassPathXmlApplicationContext("code01.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("code01-${username}.xml");
         Dog dog = ac.getBean(Dog.class);
 
         // 在调用doSomeThing()的时候，会被cglib动态代理的拦截器拦截，得到方法增强

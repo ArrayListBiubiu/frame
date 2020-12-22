@@ -15,7 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *      }
  * resolvedConstructorOrFactoryMethod一定是null，但是第二次getBean()的时候，resolvedConstructorOrFactoryMethod就不是null了
  */
-public class Code02_Main {
+public class Main02 {
     public static void main(String[] args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("code02.xml");
         Person person  = ac.getBean(Person.class);

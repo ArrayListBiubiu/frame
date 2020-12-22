@@ -2,13 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    <bean id="dog" class="code01.Dog"></bean>
-    <bean id="myInstantiationAwareBeanPostProcessor" class="code01.MyProcessor"></bean>
-
-
-
-
-
-
+    <bean id="student" class="code03.Student">
+        <property name="id" value="10"></property>
+        <property name="name" value="李白"></property>
+        <property name="gender" value="女"></property>
+    </bean>
 </beans>
