@@ -1,11 +1,9 @@
-package code03;
+package code04;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.lang.reflect.Method;
 
 @Data
 public class Student {
@@ -23,18 +21,17 @@ public class Student {
 //    @Autowired
 //    void method(){}
 
-    @Autowired
-    static void Method2(){}
+//    @Autowired
+//    static void Method2(){}
 
 
     @PostConstruct
-
-    public void initinit(){
-        System.out.println("【Computer】 init()方法启动");
+    public void initing(){
+        System.out.println("【code04.Student】 initing()方法启动");
     }
 
     @PreDestroy
-    public void destroydestory(){
-        System.out.println("【Computer】 destroy()方法启动");
+    public void destroying(){
+        System.out.println("【code04.Student】 destroying()方法启动");
     }
 }
