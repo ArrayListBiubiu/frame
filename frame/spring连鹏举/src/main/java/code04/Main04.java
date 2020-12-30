@@ -1,7 +1,7 @@
 package code04;
 
 
-import org.springframework.context.ApplicationContext;
+import code05.MyClassPathApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main04 {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("code04.xml");
+        ClassPathXmlApplicationContext ac = new MyClassPathApplicationContext("code04.xml");
 //        Student student = (Student) ac.getBean("student");
 //        System.out.println(student);
 //        ac.close();

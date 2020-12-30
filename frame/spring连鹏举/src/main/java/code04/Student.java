@@ -12,8 +12,8 @@ public class Student {
     String name;
     String gender;
 
-    @Autowired
-    Teacher teacher;
+//    @Autowired
+//    Teacher teacher;
 
 //    @Autowired
 //    static Teacher teacher2;
