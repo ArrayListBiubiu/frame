@@ -3,12 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="dog" class="code01.Dog"></bean>
-    <bean id="myProcessor" class="code01.MyProcessor"></bean>
 
+    <bean id="myFactoryBean" class="code06.MyFactoryBean"/>
 
-
-
-
+    <bean id="mouse" class="code06.Mouse"/>
 
 </beans>

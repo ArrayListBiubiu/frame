@@ -5,10 +5,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 
-public class MyClassPathApplicationContext extends ClassPathXmlApplicationContext {
+public class MyClassPathXmlApplicationContext extends ClassPathXmlApplicationContext {
 
     // 重写构造方法，否则默认调用父类无参构造，那是一个空方法
-    public MyClassPathApplicationContext(String... configLocations){
+    public MyClassPathXmlApplicationContext(String... configLocations){
         super(configLocations);
     }
 

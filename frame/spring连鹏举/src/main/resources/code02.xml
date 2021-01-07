@@ -4,11 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="person" class="code02.Person" scope="prototype">
-        <property name="id" value="1"></property>
-        <property name="name" value="zhangsan"></property>
-        <property name="age" value="18"></property>
-<!--        <constructor-arg index="0" value="1"></constructor-arg>-->
-<!--        <constructor-arg index="1" value="zhangsan"></constructor-arg>-->
+<!--        <property name="id" value="1"></property>-->
+<!--        <property name="name" value="zhangsan"></property>-->
+<!--        <property name="age" value="18"></property>-->
+        <constructor-arg index="0" value="1"></constructor-arg>
+        <constructor-arg index="1" value="zhangsan"></constructor-arg>
 <!--        <constructor-arg index="2" value="18"></constructor-arg>-->
     </bean>
 

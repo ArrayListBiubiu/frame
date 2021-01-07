@@ -14,6 +14,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * 			autowireNecessary = mbd.constructorArgumentsResolved;
  *      }
  * resolvedConstructorOrFactoryMethod一定是null，但是第二次getBean()的时候，resolvedConstructorOrFactoryMethod就不是null了
+ *
+ * 构造器的排序，（1）权限，public优先  （2）参数个数，多的优先
  */
 public class Main02 {
     public static void main(String[] args) {

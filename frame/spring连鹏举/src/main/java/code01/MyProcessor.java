@@ -16,11 +16,13 @@ public class MyProcessor implements InstantiationAwareBeanPostProcessor {
     /**
      * 实现 BeanPostProcessor 接口
      */
+    // 第七次调用后置处理器
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         System.out.println("***111***beanName：" + beanName);
         return bean;
     }
 
+    // 第八次调用后置处理器
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         System.out.println("***222***beanName：" + beanName);
         return bean;
@@ -30,6 +32,7 @@ public class MyProcessor implements InstantiationAwareBeanPostProcessor {
     /**
      * 实现 InstantiationAwareBeanPostProcessor 接口
      */
+    // 第一次调用后置处理器
     public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
         System.out.println("***333***beanName：" + beanName);
         if (beanClass == Dog.class) {
@@ -44,6 +47,7 @@ public class MyProcessor implements InstantiationAwareBeanPostProcessor {
         return null;
     }
 
+    // 第五次调用后置处理器
     public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeansException {
         System.out.println("***444***beanName：" + beanName);
         return true;
