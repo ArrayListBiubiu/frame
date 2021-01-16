@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="grass" class="code08.Grass" autowire="byName">
+        <property name="id" value="11"/>
+        <property name="identitCard" value="18811002233"/>
+        <property name="desk" value="桌子"/>
+    </bean>
+
+<!--    <bean id="leaf" class="code08.Leaf" autowire="byType">-->
+<!--        <property name="name" value="李白"/>-->
+<!--        <property name="age" value="50"/>-->
+<!--        <property name="arr" value="{1,2,3}"/>-->
+<!--    </bean>-->
+
+
+<!--    <context:component-scan base-package="code08"/>-->
+
+</beans>

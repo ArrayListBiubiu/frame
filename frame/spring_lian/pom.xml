@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring连鹏举</artifactId>
+    <artifactId>spring_lian</artifactId>
 
     <dependencies>
         <dependency>
@@ -17,6 +17,21 @@
             <artifactId>spring-context</artifactId>
             <version>5.2.8.RELEASE</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>5.2.8.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId> org.aspectj</groupId >
+            <artifactId> aspectjweaver</artifactId >
+            <version> 1.8.7</version >
+        </dependency>
+
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
