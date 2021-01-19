@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring_lian</artifactId>
+    <artifactId>spring_lian_ioc</artifactId>
 
     <dependencies>
         <dependency>
