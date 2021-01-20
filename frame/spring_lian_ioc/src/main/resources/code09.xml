@@ -4,6 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="myInstantiationAwareBeanPostProcessor" class="code09.MyInstantiationAwareBeanPostProcessor"/>
+    <bean id="myDestructionAwareBeanPostProcessor" class="code09.MyDestructionAwareBeanPostProcessor"/>
 
     <bean id="cpu" class="code09.Cup">
         <property name="name" value="杯子"/>

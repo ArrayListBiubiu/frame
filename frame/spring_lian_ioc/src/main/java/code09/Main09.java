@@ -18,8 +18,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *      （3）返回true，继续populateBean()后续的执行过程；返回false，直接populateBean()终止后续的执行过程；（这里需要查看populateBean()方法的源码，就很好理解了）
  *
  * 注：
- *      这个案例中我特意做了2个bean对象，只是为了说明，
- *      bpp的增加不是针对哪一个具体的bean对象，而是针对的是当前的整个spring容器，具体是为哪一个bean对象服务，还要具体看重写的方法逻辑。
+ *      （1）这个案例中我特意做了2个bean对象，只是为了说明，
+ *          bpp的增加不是针对哪一个具体的bean对象，而是针对的是当前的整个spring容器，具体是为哪一个bean对象服务，还要具体看重写的方法逻辑。
+ *      （2）这个案例中我特意做了2个BPP对象，只是为了说明，
+ *          registerBeanPostProcessor()方法中会实例化所有BPP
  */
 public class Main09 {
     public static void main(String[] args) {

@@ -2,7 +2,20 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Code09" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/code01.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/code02.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/code03-ArrayList_biubiu.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/code04.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/code05.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/code06.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/code07.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/code08.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/code09.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/code10.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
