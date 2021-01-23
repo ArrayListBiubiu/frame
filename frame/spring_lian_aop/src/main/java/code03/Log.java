@@ -1,10 +1,10 @@
-package code10;
+package code03;
 
 
 import lombok.Data;
 
 @Data
-public class Logger {
+public class Log {
 
     public void aopBefore(){
         System.out.println("动态代理。。。before");
@@ -18,4 +18,5 @@ public class Logger {
     public void aopThrowing(){
         System.out.println("动态代理。。。afterThrowing");
     }
+
 }
