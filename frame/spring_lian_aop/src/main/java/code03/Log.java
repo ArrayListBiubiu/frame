@@ -18,5 +18,7 @@ public class Log {
     public void aopThrowing(){
         System.out.println("动态代理。。。afterThrowing");
     }
-
+    public void aopAround(){
+        System.out.println("动态代理。。。aopAround");
+    }
 }
