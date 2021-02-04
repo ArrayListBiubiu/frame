@@ -15,9 +15,9 @@ public class MyClassPathXmlApplicationContext extends ClassPathXmlApplicationCon
     // 自定义beanFactory
     @Override
     protected void customizeBeanFactory(DefaultListableBeanFactory beanFactory) {
-        setAllowBeanDefinitionOverriding(false); // 默认值是true，这里修改为false
-        setAllowCircularReferences(false); // 默认值是true，这里修改为false
-        customizeBeanFactory(beanFactory);
+        setAllowBeanDefinitionOverriding(false);
+        setAllowCircularReferences(false);
+        super.customizeBeanFactory(beanFactory); // 需要调用 super 的方法，否则这里会出现递归的死循环
     }
 
 }

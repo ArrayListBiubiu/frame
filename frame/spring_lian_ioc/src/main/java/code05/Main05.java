@@ -39,6 +39,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main05 {
     public static void main(String[] args) {
         // 这个配置文件参数无意义，这个demo中不需要创建任何bean对象
-        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("code05.xml");
+        ClassPathXmlApplicationContext ac = new MyClassPathXmlApplicationContext("code05.xml");
     }
 }
